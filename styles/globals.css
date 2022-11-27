@@ -19,8 +19,111 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.navbar-brand {
+  height: 48px;
+  width: 42px;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  padding: 0 17px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #282c3f;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+  color: #1f456e;
+  border-bottom: 3px solid #63c5da;
+}
+
+.navbar .form-control {
+  border-radius: 30px;
+  border: 2px solid #59788e;
+  padding-left: 40px;
+}
+
+.navbar form .btn-outline-success {
+  border: none;
+  position: absolute;
+}
+
+.navbar form .btn-outline-success:hover {
+  background-color: transparent;
+  color: #1f456e;
+}
+
+.navbar form {
+  position: relative;
+}
+
+.navbar-nav .nav-item:last-child a {
+  padding-right: 0;
+}
+
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+.form-outline{
+  position: relative;
+  width: 100%;
+}
+
+.form-outline .form-control~.form-label {
+  position: absolute;
+  top: 0;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  left: 0.75rem;
+  padding-top: 0.37rem;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: all .2s ease-out;
+  color: rgba(0,0,0,.6);
+  margin-bottom: 0;
+}
+
+img{
+  width: 100%;
+  height: auto;
 }
