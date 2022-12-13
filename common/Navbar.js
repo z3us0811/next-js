@@ -44,10 +44,10 @@ const Navbar = () => {
                                     </form>
                                     <ul className="navbar-nav mb-2 mb-lg-0">
                                         <li className="nav-item">
-                                            <Link href="/user/login">Login</Link>
+                                            <Link href="/login">Login</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="/user/register">Register</Link>
+                                            <Link href="/registration">Register</Link>
                                         </li>
                                     </ul>
                                 </div>
