@@ -1,8 +1,16 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Navbar.module.css';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+    const router = useRouter();
+    const logoutfn = () => {
+        localStorage.removeItem('loginStatus');
+        localStorage.removeItem('name');
+        localStorage.removeItem('username');
+        router.reload('/courses');
+    }
     return (
         <div className={styles.navigation}>
             <div className='container-fluid'>
@@ -45,6 +53,9 @@ const Navbar = () => {
                                     <ul className="navbar-nav mb-2 mb-lg-0">
                                         <li className="nav-item">
                                             <Link href="/login">Login</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <button onClick={logoutfn}>Logout</button>
                                         </li>
                                         <li className="nav-item">
                                             <Link href="/registration">Register</Link>

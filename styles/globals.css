@@ -36,7 +36,7 @@ a {
   height: 100%;
 }
 
-.navbar-nav a {
+.navbar-nav a, .navbar-nav button {
   text-decoration: none;
   padding: 0 17px 20px;
   text-align: center;

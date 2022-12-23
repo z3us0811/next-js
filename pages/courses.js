@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from 'next/image';
 import styles from '../styles/Courses.module.css';
+import Router from "next/router";
+import { useRouter } from "next/router";
 
 export const getStaticProps = async () => {
     //api call
@@ -12,6 +14,13 @@ export const getStaticProps = async () => {
 }
 
 const Courses = (props) => {
+    const router = useRouter();
+    useEffect(() => {
+        let loginStatus = localStorage.getItem('loginStatus');
+        if(!loginStatus){
+            router.push('/login');
+        }
+    })
     const {productData} = props;
     return(
         <div className="row mt-5">
