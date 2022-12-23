@@ -48,6 +48,12 @@ a {
   text-transform: uppercase;
 }
 
+.navbar-nav button{
+  padding: 0 17px 0px;
+  border: none;
+  background: none;
+}
+
 .navbar-nav a:hover {
   color: #1f456e;
   border-bottom: 3px solid #63c5da;

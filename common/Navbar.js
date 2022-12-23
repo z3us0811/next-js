@@ -50,7 +50,7 @@ const Navbar = () => {
                                         </button>
                                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
                                     </form>
-                                    <ul className="navbar-nav mb-2 mb-lg-0">
+                                    <ul className="navbar-nav mb-2 mb-lg-0 align-items-center">
                                         <li className="nav-item">
                                             <Link href="/login">Login</Link>
                                         </li>
